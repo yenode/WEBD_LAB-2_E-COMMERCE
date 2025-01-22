@@ -46,7 +46,11 @@ body {
     padding-left: 10px;
 }
 
-.a img {
+/* CLOTHES  */
+h2{
+    color: red;
+}
+.clothes {
     height: 200px;
     width: 200px;
     border: 2px solid black;
@@ -54,14 +58,33 @@ body {
     margin: 10px;
     border-radius: 5px;
     box-shadow: 0 4px 8px black;
-    display: inline;
-    
+    transition: 0.5s;
+}
+img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
 }
 
-.a img:hover {
+
+.clothes:hover {
     box-shadow: 0 8px 16px black;
-    
 }
-.coat image{
-    display: inline;
+
+/* electronics */
+.electronics {
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px black;
+    transition: 0.5s;
+}
+
+.electronics:hover {
+    box-shadow: 0 8px 16px black;
+}
+#size{
+    margin-top: ;
 }
