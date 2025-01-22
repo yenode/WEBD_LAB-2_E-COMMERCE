@@ -1,100 +1,67 @@
 body {
-    letter-spacing: 3px;
-    line-height: 25px;
+
     background-color: rgb(255, 254, 254);
     margin: 0;
     padding-top: 0px;
     padding-bottom: 0;
 }
 
-h1 {
-    font-family: "Oswald", serif;
-    color: rgb(28, 40, 31);
-    background-image: linear-gradient(10deg, #885DF1 15%, #F65282 100%);
-    padding-top: 20px;
-    padding-bottom: 25px;
-    letter-spacing: 0.5px;
-    margin: 0;
-    margin-bottom: 15px;
-    font-size: 35px;
-}
+.navbar {
 
-img {
-    border-radius: 50px;
-    padding: 10px;
-    background-image: linear-gradient(0deg, #885DF1 50%, #F65282 100%);
-    margin: 25px;
-    
-}
 
-hr {
+    background-image: linear-gradient(90deg, #a083eb 50%, #ff2b6b 100%);
 
-    border-bottom: 1.5px solid #525762;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
 
 }
 
-pre {
-    text-align: center;
-    font-weight: 200;
-    
-}
-
-h2 {
-    text-align: center;
-    font-family: "Oswald", serif;
-    color: rgb(72, 74, 75);
-}   
-
-ul {
-    list-style-type: none;
-    list-style-position: inside;
-    margin: 0;
-    padding: 0;
-}
-
-ul li {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-.a {
-    padding: 15px;
-}
-
-.b {
-    padding: 15px;
-}
-
-.c {
-    padding: 10px;
-}
-.list a{
-    color:rgb(202, 11, 255);
-    text-decoration: none;
-}
-.list a:hover{
-    color: #22ff52;
-    
-}
-.bottom
-{
-    padding-top:5px;
-    padding-bottom: 5px;
-    background-image: linear-gradient(90deg, #F65282 15%, #885DF1 100%);
-    text-align: center;
-}
-.bottom span{
-    padding-left: 50px;
-    padding-right: 50px;
-}
-.bottom a{
-    font-family: "Macondo", serif;
-    color:rgb(36, 28, 39);
+.navbar span {
+    font-family: "Josefin Sans", serif;
     letter-spacing: 1px;
-    text-decoration: none;
+    font-size: 35px;
+    margin-right: 80px;
+    margin-left: 10px;
+
+
 }
-.bottom a:hover{
-    color: #22ff52;
+
+.navbar div {
+
+    letter-spacing: 1px;
+    display: inline;
+    margin-left: 550px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.navbar input {
+    width: 500px;
+    height: 25px;
+    border-radius: 15px;
+    display: inline;
+    padding-left: 10px;
+}
+
+.a img {
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px black;
+    display: inline;
     
+}
+
+.a img:hover {
+    box-shadow: 0 8px 16px black;
+    
+}
+.coat image{
+    display: inline;
 }
