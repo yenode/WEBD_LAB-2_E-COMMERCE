@@ -47,7 +47,11 @@ body {
 
 }
 
-.a img {
+/* CLOTHES  */
+h2{
+    color: red;
+}
+.clothes {
     height: 200px;
     width: 200px;
     border: 2px solid black;
@@ -56,14 +60,14 @@ body {
     border-radius: 5px;
     box-shadow: 0 4px 8px black;
     display: inline;
-
+    
 }
 
-.a img:hover {
+
+.clothes:hover {
     box-shadow: 0 8px 16px black;
-
+    
 }
-
-.coat image {
+.coat image{
     display: inline;
 }
