@@ -159,26 +159,38 @@ body {
 /* CLOTHES  */
 h2 {
     color: red;
+    text-align: center;
 }
 
-.clothes {
-    height: 200px;
-    width: 200px;
+.items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    height: 250px; /* Fixed height */
+    width: 200px; /* Fixed width */
     border: 2px solid black;
-    display: inline-block;
     margin: 10px;
     border-radius: 5px;
     box-shadow: 0 4px 8px black;
-    display: inline;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
 }
 
+.product img {
+    max-height: 150px; /* Fixed image height */
+    max-width: 100%; /* Responsive width */
+    object-fit: cover; /* Maintain aspect ratio */
+    transition: transform 0.3s;
+}
 
-.clothes:hover {
+.product:hover {
     box-shadow: 0 8px 16px black;
-
-}
-
-.coat image {
-    display: inline;
+    transform: scale(1.01);
 }
