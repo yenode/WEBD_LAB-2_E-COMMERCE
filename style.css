@@ -1,39 +1,37 @@
 body {
-
     background-color: rgb(255, 254, 254);
     margin: 0;
-    padding-top: 0px;
-    padding-bottom: 0;
+    padding: 0;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem;
     background-image: linear-gradient(90deg, #a083eb 50%, #ff2b6b 100%);
 }
 
 .navbar .logo {
     font-family: "Jersey 10", serif;
-    letter-spacing:3px;
+    letter-spacing: 3px;
     font-size: 30px;
-    font-style: italic;
-    font-weight: 1000;
+    font-weight: bold;
     color: rgb(255, 255, 255);
-    
 }
 
 .navbar div {
-
     letter-spacing: 1px;
-    display: inline;
-    
 }
 
 .navbar a {
     text-decoration: none;
     color: rgb(255, 255, 255);
+    margin: 0 10px;
+}
+
+.navbar a:hover {
+    color: #0e11c7;
 }
 
 .navbar input {
@@ -43,31 +41,39 @@ body {
     border: none;
     padding-left: 10px;
 }
-.navbar input{
 
-}
-
-/* CLOTHES  */
-h2{
+h2 {
     color: red;
+    text-align: center;
 }
-.clothes {
-    height: 200px;
-    width: 200px;
+
+.items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    height: 250px; /* Fixed height */
+    width: 200px; /* Fixed width */
     border: 2px solid black;
-    display: inline-block;
     margin: 10px;
     border-radius: 5px;
     box-shadow: 0 4px 8px black;
-    display: inline;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
 }
 
+.product img {
+    max-height: 150px; /* Fixed image height */
+    max-width: 100%; /* Responsive width */
+    object-fit: cover; /* Maintain aspect ratio */
+}
 
-.clothes:hover {
+.product:hover {
     box-shadow: 0 8px 16px black;
-    
-}
-.coat image{
-    display: inline;
 }
