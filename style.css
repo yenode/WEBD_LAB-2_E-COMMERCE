@@ -1,5 +1,5 @@
 body {
-<<<<<<< HEAD
+
 
     background-color: rgb(242, 237, 237);
     
@@ -10,16 +10,12 @@ body {
     flex-direction: column;
     min-width: 100vh;
     
-=======
-    background-color: rgb(255, 254, 254);
-    margin: 0;
-    padding: 0;
->>>>>>> d9396b40ca7e46de6f88177e18d85a23aa88d500
+
 }
 
 .navbar {
     display: flex;
-<<<<<<< HEAD
+
     position: fixed;
     top: 0;
     right: 0;
@@ -32,7 +28,7 @@ body {
     padding-right: 1rem;
 
     /* background-color: #3c3939; */
-=
+
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
@@ -46,7 +42,7 @@ body {
     font-size: 30px;
     font-weight: bold;
     color: rgb(255, 255, 255);
-<<<<<<< HEAD
+
     display: flex;
     min-width: 10rem;
     margin-right: 1.5rem;
@@ -245,9 +241,7 @@ body {
 
 /* CLOTHES  */
 
-    display: flex;
-    object-fit: cover;
-}
+
 
 input[type="radio"] {
     display: none; /* Hide the radio buttons */
@@ -304,7 +298,7 @@ input[type="radio"]:checked + .navigation label {
     background-color: #717171;
 }
 
->>>>>>> d9396b40ca7e46de6f88177e18d85a23aa88d500
+
 h2 {
     color: red;
     text-align: center;
@@ -349,7 +343,6 @@ h2 {
     box-shadow: 0 8px 16px black;
     transform: scale(1.01);
 }
-<<<<<<< HEAD
 
 /* Footer Section */
 .footer {
@@ -357,7 +350,7 @@ h2 {
     background-color: #007BFF;
     color: wheat;
 
-=======
+}
 .advertisement img{
     height: 300px; /* Fixed height */
     width: 1250px; /* Fixed width */
@@ -370,5 +363,5 @@ h2 {
     justify-content: center;
     text-align: center;
     padding: 10px;
->>>>>>> d9396b40ca7e46de6f88177e18d85a23aa88d500
+
 }
