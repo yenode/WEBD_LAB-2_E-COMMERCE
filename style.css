@@ -10,7 +10,6 @@ body {
     min-width: 100vh;
     
 }
-
 .navbar {
     display: flex;
     position: fixed;
@@ -214,6 +213,58 @@ body {
 }
 
 
+
+
+input[type="radio"] {
+    display: none; /* Hide the radio buttons */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* Show the first slide by default */
+#slide1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides {
+    transform: translateX(-200%);
+}
+
+/* Navigation styles */
+.navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navigation label {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    background-color: rgb(247, 4, 4);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
 
 
 input[type="radio"] {
