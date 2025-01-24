@@ -47,6 +47,7 @@ body {
     background-color: white;
     width: 45rem;
     transition: all 0.3s ease;
+    min-width: 25rem;
 }
 .searchbar:hover {
     border-color: #007BFF;
