@@ -16,8 +16,11 @@ body {
     left: 0;
     justify-content: space-between;
     align-items: center;
-    
-    padding: 0.5rem 2rem;
+
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
     background-image: linear-gradient(90deg, #a083eb 50%, #ff2b6b 100%);
 }
 
@@ -28,7 +31,9 @@ body {
     font-style: italic;
     font-weight: 1000;
     color: rgb(255, 255, 255);
-
+    display: flex;
+    min-width: 10rem;
+    margin-right: 1.5rem;
 }
 
 
@@ -48,11 +53,14 @@ body {
     width: 45rem;
     transition: all 0.3s ease;
     min-width: 25rem;
+
 }
+
 .searchbar:hover {
     border-color: #007BFF;
     box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
 }
+
 .searchbar input {
     border: none;
     outline: none;
@@ -66,97 +74,127 @@ body {
 .searchbar input::placeholder {
     color: #aaa;
 }
- 
+
 /* Search Icon */
 .searchbar button {
     background-color: #ffffff;
     border: none;
     color: white;
-    padding-top: 0.5rem ;
+    padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 1rem;
-    padding-right:1rem;
+    padding-right: 1rem;
     font-size: 1.2rem;
     cursor: pointer;
-    transition: background-color 0.5s ease-in-out ;
+    transition: background-color 0.5s ease-in-out;
 }
 
 /* Button Hover Effect */
 .searchbar button:hover {
     background-color: rgba(218, 214, 218, 0.733);
 }
+
 .navbar .links {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
+    margin-right: none;
 }
-.links .login{
+
+.links .login {
     border-radius: 5px;
-    padding-top: 0.5rem ;
+    padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 1rem;
-    padding-right:1rem;
+    padding-right: 1rem;
     font-size: 1.2rem;
     cursor: pointer;
     background-color: transparent;
     border: none;
     font-size: 1rem;
-    transition: background-color 0.2s ease-in-out ;
+    transition: background-color 0.2s ease-in-out;
 }
-.links .login:hover{
-   
-    background-color: #a083eb ;
-}
-.links .cart{
-    border-radius: 5px;
-    padding-top: 0.5rem ;
-    padding-bottom: 0.5rem;
-    padding-left: 1rem;
-    padding-right:1rem;
-    font-size: 1.2rem;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    font-size: 1rem;
-    transition: background-color 0.2s ease-in-out ;
-}
-.links .cart:hover{
-   
+
+.links .login:hover {
+
     background-color: #a083eb;
 }
-.links .orders{
+
+.links .cart {
     border-radius: 5px;
-    padding-top: 0.5rem ;
+    padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 1rem;
-    padding-right:1rem;
+    padding-right: 1rem;
     font-size: 1.2rem;
     cursor: pointer;
     background-color: transparent;
     border: none;
     font-size: 1rem;
-    transition: background-color 0.2s ease-in-out ;
+    transition: background-color 0.2s ease-in-out;
 }
-.links .orders:hover{
-   
-    background-color: #a083eb ;
+
+.links .cart:hover {
+
+    background-color: #a083eb;
 }
-.links .seller{
+
+.links .orders {
     border-radius: 5px;
-    padding-top: 0.5rem ;
+    padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 1rem;
-    padding-right:1rem;
+    padding-right: 1rem;
     font-size: 1.2rem;
     cursor: pointer;
     background-color: transparent;
     border: none;
     font-size: 1rem;
-    transition: background-color 0.2s ease-in-out ;
+    transition: background-color 0.2s ease-in-out;
 }
-.links .seller:hover{
-   
-    background-color: #a083eb ;
+
+.links .orders:hover {
+
+    background-color: #a083eb;
 }
+
+.links .location {
+    border-radius: 5px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.links .location:hover {
+
+    background-color: #a083eb;
+}
+
+.links .more {
+    border-radius: 5px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.links .more:hover {
+
+    background-color: #a083eb;
+}
+
 /* CLOTHES  */
 h2 {
     color: red;
@@ -170,8 +208,10 @@ h2 {
 }
 
 .product {
-    height: 250px; /* Fixed height */
-    width: 200px; /* Fixed width */
+    height: 250px;
+    /* Fixed height */
+    width: 200px;
+    /* Fixed width */
     border: 2px solid black;
     margin: 10px;
     border-radius: 5px;
@@ -185,9 +225,12 @@ h2 {
 }
 
 .product img {
-    max-height: 150px; /* Fixed image height */
-    max-width: 100%; /* Responsive width */
-    object-fit: cover; /* Maintain aspect ratio */
+    max-height: 150px;
+    /* Fixed image height */
+    max-width: 100%;
+    /* Responsive width */
+    object-fit: cover;
+    /* Maintain aspect ratio */
     transition: transform 0.3s;
 }
 
