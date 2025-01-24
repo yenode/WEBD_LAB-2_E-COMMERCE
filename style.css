@@ -1,11 +1,15 @@
+
 body {
+
     background-color: rgb(242, 237, 237);
+    
     padding: 0;
     border: none;
     margin: 0;
     display: flex;
     flex-direction: column;
     min-width: 100vh;
+    
 }
 
 .navbar {
@@ -14,11 +18,16 @@ body {
     top: 0;
     right: 0;
     left: 0;
-    max-height: 3rem;
-    padding: 0.5rem 2rem;
+    
+   
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: #3c3939; */
     background-image: linear-gradient(90deg, #a083eb 50%, #ff2b6b 100%);
-    z-index: 1000; /* Ensure navbar is above other content */
-    align-items: center; /* Center items vertically */
 }
 
 .navbar .logo {
@@ -32,8 +41,10 @@ body {
     min-width: 10rem;
     margin-right: 1.5rem;
     justify-content: center;
-    align-items: center;
+    align-items:center ;
 }
+
+
 
 .navbar a {
     text-decoration: none;
@@ -50,6 +61,7 @@ body {
     width: 45rem;
     transition: all 0.3s ease;
     min-width: 25rem;
+
 }
 
 .searchbar:hover {
@@ -71,55 +83,139 @@ body {
     color: #aaa;
 }
 
+/* Search Icon */
 .searchbar button {
     background-color: #ffffff;
     border: none;
     color: white;
-    padding: 0.5rem 1rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     font-size: 1.2rem;
     cursor: pointer;
     transition: background-color 0.5s ease-in-out;
 }
 
+/* Button Hover Effect */
 .searchbar button:hover {
     background-color: rgba(218, 214, 218, 0.733);
 }
 
 .navbar .links {
     display: flex;
-    gap: 1rem; /* Space between buttons */
-    margin-left: auto; /* Push links to the right */
+    gap: 1rem;
+    margin-right: none;
 }
 
-.links button {
+.links .login {
     border-radius: 5px;
-    padding: 0.5rem 1rem; /* Consistent padding for all buttons */
-    font-size: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+
+    font-size: 1.2rem;
     cursor: pointer;
     background-color: transparent;
-    border: none; /* Remove border for a cleaner look */
+    border-color: transparent;
+    font-size: 1rem;
     transition: background-color 0.2s ease-in-out;
 }
 
-.links button:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Add a hover effect */
+.links .login:hover {
+
+
+    border-color: #ffffff #ffffff;
+    border-style: double;
+    border-width: 0.1rem;
+
+}
+
+.links .cart {
+    border-radius: 5px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 1rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.links .cart:hover {
+
+    border-color: #ffffff #ffffff;
+    border-style: double;
+    border-width: 0.1rem;
+}
+
+.links .orders {
+    border-radius: 5px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 1rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.links .orders:hover {
+
+    border-color: #ffffff #ffffff;
+    border-style: double;
+    border-width: 0.1rem;
 }
 
 .links .location {
-    display: flex;
-    flex-direction: column; /* Stack text vertically */
-    align-items: center; /* Center text */
-    justify-content: center; /* Center text */
+    border-radius: 5px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 1rem;
+    transition: background-color 0.2s ease-in-out;
 }
 
-.card-slider {
-    position: relative;
-    width: 1250px;
-    height: 320px; /* Set a fixed height for the slider */
-    overflow: hidden;
-    margin-left: 50px;
-    margin-top: 3rem; /* Add margin to avoid overlap with navbar */
+.links .location:hover {
+
+    border-color: #ffffff #ffffff;
+    border-style: double;
+    border-width: 0.1rem;
 }
+
+.links .more {
+    border-radius: 5px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 1rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.links .more:hover {
+
+    border-color: #ffffff #ffffff;
+    border-style: double;
+    border-width: 0.1rem;
+}
+
+
 
 input[type="radio"] {
     display: none; /* Hide the radio buttons */
@@ -130,16 +226,7 @@ input[type="radio"] {
     transition: transform 0.5s ease;
 }
 
-/* .slide {
-    min-width: 100%;
-    transition: opacity 1s ease-in-out;
-}
 
-.slide img {
-    width: 100%;
-    height: 100%; /* Set height to fill the slider */
-    object-fit: cover; /* Maintain aspect ratio */
-} */
 
 /* Show the first slide by default */
 #slide1:checked ~ .slides {
