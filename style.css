@@ -114,9 +114,10 @@ body {
 
 .card-slider {
     position: relative;
-    width: 100%;
-    height: 400px; /* Set a fixed height for the slider */
+    width: 1250px;
+    height: 320px; /* Set a fixed height for the slider */
     overflow: hidden;
+    margin-left: 50px;
     margin-top: 3rem; /* Add margin to avoid overlap with navbar */
 }
 
@@ -129,7 +130,7 @@ input[type="radio"] {
     transition: transform 0.5s ease;
 }
 
-.slide {
+/* .slide {
     min-width: 100%;
     transition: opacity 1s ease-in-out;
 }
@@ -138,7 +139,7 @@ input[type="radio"] {
     width: 100%;
     height: 100%; /* Set height to fill the slider */
     object-fit: cover; /* Maintain aspect ratio */
-}
+} */
 
 /* Show the first slide by default */
 #slide1:checked ~ .slides {
@@ -222,4 +223,10 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.slide{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
 }
