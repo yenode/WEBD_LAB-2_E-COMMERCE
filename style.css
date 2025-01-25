@@ -1,22 +1,23 @@
-
 body {
 
     background-color: rgb(242, 237, 237);
-    
+
     padding: 0;
     border: none;
     margin: 0;
     display: flex;
     flex-direction: column;
     min-width: 100vh;
-    
+
 }
 
 /* Navbar */
 
 .navbar {
+    overflow: auto;/*for scroll bar*/
+    white-space: wrap; /*for scroll bar */
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;/*wrap when no scroll bar*/
     position: sticky;
     top: 0;
     right: 0;
@@ -27,7 +28,7 @@ body {
     padding-right: 1rem;
     justify-content: space-around;
     align-items: center;
-    
+
     background-image: linear-gradient(90deg, #a083eb 50%, #ff2b6b 100%);
     z-index: 100;
 }
@@ -43,7 +44,7 @@ body {
     min-width: 10rem;
     margin-right: 1.5rem;
     justify-content: center;
-    align-items:center ;
+    align-items: center;
 }
 
 
@@ -51,7 +52,7 @@ body {
 .navbar a {
     text-decoration: none;
     color: rgb(255, 255, 255);
-    
+
 }
 
 .searchbar {
@@ -64,7 +65,7 @@ body {
     width: 40rem;
     transition: all 0.3s ease;
     min-width: 25rem;
-    
+
 
 }
 
@@ -111,7 +112,8 @@ body {
     gap: .7rem;
     margin-right: none;
 }
-.links button{
+
+.links button {
     padding: .8rem .8rem;
 }
 
@@ -119,7 +121,7 @@ body {
     border-radius: 5px;
     /* padding-top: 0.5rem;
     padding-bottom: 0.5rem; */
-    
+
 
     font-size: 1.2rem;
     cursor: pointer;
@@ -221,8 +223,11 @@ body {
     border-style: double;
     border-width: 0.1rem;
 }
+
 /* All Items Container */
-.all-items{
+.all-items {
+    overflow: auto;
+    white-space: nowrap;
     display: flex;
     justify-content: center;
     background-color: white;
@@ -230,14 +235,15 @@ body {
     margin-bottom: -1rem;
     padding-top: 0.5rem;
     padding-bottom: 1rem;
-   
+
 }
 
-.all-items .item{
-    font-family: "Work Sans",serif;
+.all-items .item {
+    position: relative;
+    font-family: "Work Sans", serif;
     color: rgb(0, 0, 0);
     font-size: 1rem;
-    font-weight: 500 ;
+    font-weight: 500;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -246,26 +252,29 @@ body {
     padding: 0 0.5rem;
 }
 
-.all-items a{
+.all-items a {
+
     text-decoration: none;
     color: inherit;
 }
-.all-items .item img{
-    max-height: 100px; 
-    max-width: 80%; 
+
+.all-items .item img {
+    max-height: 100px;
+    max-width: 80%;
     object-fit: cover;
     margin-bottom: 0.5rem;
 
 }
 
-.all-items .item:hover{
+.all-items .item:hover {
     color: #007BFF;
 }
+
 /* Middle Content */
 
 .sports,
 .electronics,
-.clothes{
+.clothes {
     display: block;
     background-color: white;
     margin: 2rem 1rem;
@@ -279,14 +288,14 @@ body {
 
 .sports span,
 .electronics span,
-.clothes span{
-    
-    font-family: "Work Sans",serif;
+.clothes span {
+
+    font-family: "Work Sans", serif;
     color: rgb(0, 0, 0);
     font-size: 1.5rem;
-    font-weight: 550 ;
+    font-weight: 550;
     padding: 0;
-    
+
 }
 
 .sports .items-container,
@@ -299,10 +308,10 @@ body {
 }
 
 .product {
-    height: 250px; 
-    width: 200px; 
+    height: 250px;
+    width: 200px;
     margin-bottom: 3rem;
-    border-bottom:1px solid #cecaca;
+    border-bottom: 1px solid #cecaca;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -315,9 +324,12 @@ body {
 }
 
 .product img {
-    max-height: 150px; /* Fixed image height */
-    max-width: 100%; /* Responsive width */
-    object-fit: cover; /* Maintain aspect ratio */
+    max-height: 150px;
+    /* Fixed image height */
+    max-width: 100%;
+    /* Responsive width */
+    object-fit: cover;
+    /* Maintain aspect ratio */
     transition: transform 0.1s;
 }
 
@@ -327,12 +339,12 @@ body {
     z-index: 2;
 }
 
-.product:hover{
-    border-bottom:2px solid #9d9b9b;
+.product:hover {
+    border-bottom: 2px solid #9d9b9b;
     cursor: pointer;
 }
 
-.items-container a{
+.items-container a {
     text-decoration: none;
     color: inherit;
 }
@@ -341,49 +353,52 @@ body {
 
 
 /* Footer Section */
-.footer{
-    
-    background-image:linear-gradient(0deg, rgb(74, 74, 186) 30%,rgb(212, 106, 212) 100%);
+.footer {
+
+    background-image: linear-gradient(0deg, rgb(74, 74, 186) 30%, rgb(212, 106, 212) 100%);
     padding-left: 6rem;
     padding-right: 6rem;
     padding-top: 4rem;
     margin-top: 8rem;
     padding-bottom: 4rem;
-    
+
 }
 
-.fa{
+.fa {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between ;
-    
-    
+    justify-content: space-between;
+
+
 }
-.fa i{
+
+.fa i {
     margin-top: 0.5rem;
     color: #f44a16;
     font-size: 2rem;
 }
 
-.fa span{
+.fa span {
     font-family: none;
     font-size: medium;
     letter-spacing: 1px;
     color: #3c3333;
     font-weight: bold;
-    
+
 }
-.fa a{
+
+.fa a {
     text-decoration: none;
-    color:#312a2a ;
+    color: #312a2a;
 }
 
-.faa{
+.faa {
     display: flex;
     gap: 1.5rem;
-    
+
 }
-.faab h4{
+
+.faab h4 {
     font-family: "Kanit", serif;
     margin: 0;
     margin-bottom: 1rem;
@@ -392,11 +407,12 @@ body {
     letter-spacing: 1px;
 }
 
-.fab{
+.fab {
     display: flex;
     gap: 1.5rem;
 }
-.fabb h4{
+
+.fabb h4 {
     font-family: "Kanit", serif;
     margin: 0;
     margin-bottom: 1rem;
@@ -405,12 +421,13 @@ body {
     letter-spacing: 1px;
 }
 
-.fac{
+.fac {
     display: flex;
     gap: 1.5rem;
-    
+
 }
-.facb h4{
+
+.facb h4 {
     font-family: "Kanit", serif;
     margin: 0;
     margin-bottom: 1rem;
@@ -419,21 +436,22 @@ body {
     letter-spacing: 1px;
 }
 
-.footer hr{
+.footer hr {
     margin: 4rem auto;
-    
+
     border: 1px solid #d1c3c3;
     width: 100%;
-    
+
 }
 
-.fb{
+.fb {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
+
 }
-.fbab pre{
+
+.fbab pre {
     font-family: none;
     font-size: small;
     letter-spacing: 1px;
@@ -441,20 +459,22 @@ body {
     font-weight: bold;
     line-height: 1.5rem;
 }
-.fba .logo{
+
+.fba .logo {
     font-family: "Jersey 10", serif;
     letter-spacing: 3px;
     font-size: 30px;
     font-style: italic;
     font-weight: 1000;
-       
-    
+
+
 }
-.fba .logo a{
+
+.fba .logo a {
     color: rgb(255, 255, 255);
 }
 
-.fbac h4{
+.fbac h4 {
     font-family: "Kanit", serif;
     margin: 0;
     margin-bottom: 1rem;
@@ -463,44 +483,45 @@ body {
     letter-spacing: 1px;
 }
 
-.fbac .x{
+.fbac .x {
     background-color: rgb(91, 139, 233);
     border-radius: 40px;
     border: none;
     font-size: 2rem;
 }
 
-.fbac .x i{
+.fbac .x i {
     color: #ffffff;
 }
-.fbac .insta{
+
+.fbac .insta {
     background-color: rgb(255, 255, 255);
     border-radius: 40px;
     border: none;
     font-size: 2rem;
 }
 
-.fbac .insta i{
+.fbac .insta i {
     color: #e34eda;
 }
 
-.fbac .face{
+.fbac .face {
     background-color: rgb(9, 139, 233);
     border-radius: 40px;
     border: none;
     font-size: 2rem;
 }
 
-.fbac .face i{
+.fbac .face i {
     color: #ffffff;
 }
 
-.fbac button{
+.fbac button {
     margin-right: 1rem;
 }
 
 
-.fbb h4{
+.fbb h4 {
     font-family: "Kanit", serif;
     margin: 0;
     margin-bottom: 2px;
@@ -508,74 +529,80 @@ body {
     font-size: 22.5px;
     letter-spacing: 1px;
 }
-.fbb hr{
+
+.fbb hr {
     margin: 0;
-    border: 1px solid   #f44a16;
+    border: 1px solid #f44a16;
     width: 50%;
 }
-.fbba{
-    display: flex ;
+
+.fbba {
+    display: flex;
     gap: 2rem;
 }
-.fbba a{
+
+.fbba a {
     color: inherit;
     text-decoration: none;
 }
 
-.fbba a:hover{
+.fbba a:hover {
     text-decoration: underline;
 }
-.fbba ul{
-    padding:0; 
+
+.fbba ul {
+    padding: 0;
     line-height: 1.8rem;
 }
- .fbba li{
+
+.fbba li {
     color: #3c3333;
     list-style: none;
     text-decoration: none;
- }
+}
 
- .fbc h4{
+.fbc h4 {
     font-family: "Kanit", serif;
     margin: 0;
     margin-bottom: 2px;
     color: white;
     font-size: 22.5px;
     letter-spacing: 1px;
- }
+}
 
- .fbc hr{
+.fbc hr {
     margin: 0;
-    border: 1px solid   #f44a16;
+    border: 1px solid #f44a16;
     width: 20%;
- }
+}
 
- .fbc .banks {
+.fbc .banks {
     margin-top: 1rem;
     display: flex;
-    
- }
 
- .fc{
+}
+
+.fc {
     background-color: transparent;
     padding: 0.5rem;
     display: flex;
     font-size: 1.2rem;
     justify-content: center;
- }
+}
 
- .fc a{
+.fc a {
     text-decoration: none;
-    color:#f44a16 ;
- }
- .fc a:hover{
+    color: #f44a16;
+}
+
+.fc a:hover {
     text-decoration: underline;
- }
+}
 
 
 
- /* Eliminated Part */
- 
+/* Eliminated Part */
+
 /* 
 input[type="radio"] {
     display: none; /* Hide the radio buttons */
