@@ -109,7 +109,7 @@ body {
 
 .navbar .links {
     display: flex;
-    gap: 1rem;
+    gap: .7rem;
     margin-right: none;
 }
 
@@ -191,7 +191,9 @@ body {
     font-size: 1rem;
     transition: background-color 0.2s ease-in-out;
 }
-
+.links a{
+   
+}
 .links .location:hover {
 
     border-color: #ffffff #ffffff;
