@@ -6,6 +6,7 @@ body {
     padding: 0;
     border: none;
     margin: 0;
+    margin-top: 4rem;
     display: flex;
     flex-direction: column;
     min-width: 100vh;
@@ -14,6 +15,7 @@ body {
 
 .navbar {
     display: flex;
+    flex-wrap: wrap;
     position: fixed;
     top: 0;
     right: 0;
@@ -28,6 +30,7 @@ body {
     align-items: center;
     /* background-color: #3c3939; */
     background-image: linear-gradient(90deg, #a083eb 50%, #ff2b6b 100%);
+    z-index: 100;
 }
 
 .navbar .logo {
@@ -49,6 +52,7 @@ body {
 .navbar a {
     text-decoration: none;
     color: rgb(255, 255, 255);
+    
 }
 
 .searchbar {
@@ -58,9 +62,10 @@ body {
     border-radius: 10px;
     overflow: hidden;
     background-color: white;
-    width: 45rem;
+    width: 40rem;
     transition: all 0.3s ease;
     min-width: 25rem;
+    
 
 }
 
@@ -88,8 +93,8 @@ body {
     background-color: #ffffff;
     border: none;
     color: white;
-    padding-top: 0rem;
-    padding-bottom: 0rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
     padding-left: 1rem;
     padding-right: 1rem;
     font-size: 1.2rem;
@@ -112,7 +117,7 @@ body {
     border-radius: 5px;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    padding-left: 1rem;
+    
 
     font-size: 1.2rem;
     cursor: pointer;
@@ -301,6 +306,7 @@ h2 {
 .product:hover {
     box-shadow: 0 8px 16px black;
     transform: scale(1.01);
+    z-index: 2;
 }
 
 .advertisement img {
@@ -317,3 +323,226 @@ h2 {
     width: 100%;
     height: auto;
 }
+
+
+.footer{
+    
+    background-image:linear-gradient(0deg, rgb(74, 74, 186) 30%,rgb(212, 106, 212) 100%);
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 4rem;
+    margin-top: 25rem;
+    padding-bottom: 4rem;
+    
+}
+
+.fa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+    
+    
+}
+.fa i{
+    margin-top: 0.5rem;
+    color: #f44a16;
+    font-size: 2rem;
+}
+
+.fa span{
+    font-family: none;
+    font-size: medium;
+    letter-spacing: 1px;
+    color: #3c3333;
+    font-weight: bold;
+    
+}
+.fa a{
+    text-decoration: none;
+    color:#312a2a ;
+}
+
+.faa{
+    display: flex;
+    gap: 1.5rem;
+    
+}
+.faab h4{
+    font-family: "Kanit", serif;
+    margin: 0;
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 22.5px;
+    letter-spacing: 1px;
+}
+
+.fab{
+    display: flex;
+    gap: 1.5rem;
+}
+.fabb h4{
+    font-family: "Kanit", serif;
+    margin: 0;
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 22.5px;
+    letter-spacing: 1px;
+}
+
+.fac{
+    display: flex;
+    gap: 1.5rem;
+    
+}
+.facb h4{
+    font-family: "Kanit", serif;
+    margin: 0;
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 22.5px;
+    letter-spacing: 1px;
+}
+
+.footer hr{
+    margin: 4rem auto;
+    
+    border: 1px solid #d1c3c3;
+    width: 100%;
+    
+}
+
+.fb{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.fbab pre{
+    font-family: none;
+    font-size: small;
+    letter-spacing: 1px;
+    color: #3c3333;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+.fba .logo{
+    font-family: "Jersey 10", serif;
+    letter-spacing: 3px;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 1000;
+       
+    
+}
+.fba .logo a{
+    color: rgb(255, 255, 255);
+}
+
+.fbac h4{
+    font-family: "Kanit", serif;
+    margin: 0;
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 22.5px;
+    letter-spacing: 1px;
+}
+
+.fbac .x{
+    background-color: rgb(91, 139, 233);
+    border-radius: 40px;
+    border: none;
+    font-size: 2rem;
+}
+
+.fbac .x i{
+    color: #ffffff;
+}
+.fbac .insta{
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    border: none;
+    font-size: 2rem;
+}
+
+.fbac .insta i{
+    color: #e34eda;
+}
+
+.fbac .face{
+    background-color: rgb(9, 139, 233);
+    border-radius: 40px;
+    border: none;
+    font-size: 2rem;
+}
+
+.fbac .face i{
+    color: #ffffff;
+}
+
+.fbac button{
+    margin-right: 1rem;
+}
+
+.fbb h4{
+    font-family: "Kanit", serif;
+    margin: 0;
+    margin-bottom: 2px;
+    color: white;
+    font-size: 22.5px;
+    letter-spacing: 1px;
+}
+.fbb hr{
+    margin: 0;
+    border: 1px solid   #f44a16;
+    width: 50%;
+}
+.fbba{
+    display: flex ;
+    gap: 2rem;
+}
+.fbba a{
+    color: inherit;
+}
+.fbba ul{
+    padding:0; 
+    line-height: 1.8rem;
+}
+ .fbba li{
+    color: #3c3333;
+    list-style: none;
+    text-decoration: underline;
+ }
+
+ .fbc h4{
+    font-family: "Kanit", serif;
+    margin: 0;
+    margin-bottom: 2px;
+    color: white;
+    font-size: 22.5px;
+    letter-spacing: 1px;
+ }
+
+ .fbc hr{
+    margin: 0;
+    border: 1px solid   #f44a16;
+    width: 50%;
+ }
+
+ .fbc .banks {
+    margin-top: 1rem;
+    display: flex;
+    
+ }
+
+ .fc{
+    background-color: transparent;
+    padding: 0.5rem;
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: center;
+ }
+
+ .fc a{
+    text-decoration: none;
+    color:#f44a16 ;
+ }
