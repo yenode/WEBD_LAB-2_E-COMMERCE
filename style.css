@@ -229,7 +229,7 @@ body {
     overflow: auto;
     white-space: nowrap;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     background-color: white;
     margin: 1rem 1rem;
     margin-bottom: -1rem;
