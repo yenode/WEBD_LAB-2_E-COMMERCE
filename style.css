@@ -6,29 +6,28 @@ body {
     padding: 0;
     border: none;
     margin: 0;
-    margin-top: 4rem;
     display: flex;
     flex-direction: column;
     min-width: 100vh;
     
 }
 
+/* Navbar */
+
 .navbar {
     display: flex;
     flex-wrap: wrap;
-    position: fixed;
+    position: sticky;
     top: 0;
     right: 0;
     left: 0;
-    
-   
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 2rem;
     padding-right: 1rem;
     justify-content: space-around;
     align-items: center;
-    /* background-color: #3c3939; */
+    
     background-image: linear-gradient(90deg, #a083eb 50%, #ff2b6b 100%);
     z-index: 100;
 }
@@ -88,7 +87,7 @@ body {
     color: #aaa;
 }
 
-/* Search Icon */
+
 .searchbar button {
     background-color: #ffffff;
     border: none;
@@ -102,7 +101,7 @@ body {
     transition: background-color 0.5s ease-in-out;
 }
 
-/* Button Hover Effect */
+
 .searchbar button:hover {
     background-color: rgba(218, 214, 218, 0.733);
 }
@@ -112,11 +111,14 @@ body {
     gap: .7rem;
     margin-right: none;
 }
+.links button{
+    padding: .8rem .8rem;
+}
 
 .links .login {
     border-radius: 5px;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    /* padding-top: 0.5rem;
+    padding-bottom: 0.5rem; */
     
 
     font-size: 1.2rem;
@@ -138,10 +140,10 @@ body {
 
 .links .cart {
     border-radius: 5px;
-    padding-top: 0.5rem;
+    /* padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 1rem;
-    padding-right: 1rem;
+    padding-right: 1rem; */
     font-size: 1.2rem;
     cursor: pointer;
     background-color: transparent;
@@ -159,10 +161,10 @@ body {
 
 .links .orders {
     border-radius: 5px;
-    padding-top: 0.5rem;
+    /* padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 1rem;
-    padding-right: 1rem;
+    padding-right: 1rem; */
     font-size: 1.2rem;
     cursor: pointer;
     background-color: transparent;
@@ -180,10 +182,10 @@ body {
 
 .links .location {
     border-radius: 5px;
-    padding-top: 0.5rem;
+    /* padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 1rem;
-    padding-right: 1rem;
+    padding-right: 1rem; */
     font-size: 1.2rem;
     cursor: pointer;
     background-color: transparent;
@@ -191,9 +193,7 @@ body {
     font-size: 1rem;
     transition: background-color 0.2s ease-in-out;
 }
-.links a{
-   
-}
+
 .links .location:hover {
 
     border-color: #ffffff #ffffff;
@@ -203,10 +203,10 @@ body {
 
 .links .more {
     border-radius: 5px;
-    padding-top: 0.5rem;
+    /* padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 1rem;
-    padding-right: 1rem;
+    padding-right: 1rem; */
     font-size: 1.5rem;
     cursor: pointer;
     background-color: transparent;
@@ -221,74 +221,89 @@ body {
     border-style: double;
     border-width: 0.1rem;
 }
-
-
-
-input[type="radio"] {
-    display: none; /* Hide the radio buttons */
-}
-
-.slides {
+/* All Items Container */
+.all-items{
     display: flex;
-    transition: transform 0.5s ease;
+    justify-content: center;
+    background-color: white;
+    margin: 1rem 1rem;
+    margin-bottom: -1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+   
 }
 
-
-
-/* Show the first slide by default */
-#slide1:checked ~ .slides {
-    transform: translateX(0);
-}
-
-#slide2:checked ~ .slides {
-    transform: translateX(-100%);
-}
-
-#slide3:checked ~ .slides {
-    transform: translateX(-200%);
-}
-
-/* Navigation styles */
-.navigation {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.navigation label {
-    cursor: pointer;
-    height: 10px;
-    width: 10px;
-    background-color: rgb(247, 4, 4);
-    border-radius: 50%;
-    display: inline-block;
-    margin: 0 5px;
-    transition: background-color 0.3s;
-}
-
-input[type="radio"]:checked + .navigation label {
-    background-color: #717171;
-}
-
-h2 {
-    color: red;
+.all-items .item{
+    font-family: "Work Sans",serif;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: 500 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    padding: 0 0.5rem;
 }
 
-.items-container {
+.all-items a{
+    text-decoration: none;
+    color: inherit;
+}
+.all-items .item img{
+    max-height: 100px; 
+    max-width: 80%; 
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+
+}
+
+.all-items .item:hover{
+    color: #007BFF;
+}
+/* Middle Content */
+
+.sports,
+.electronics,
+.clothes{
+    display: block;
+    background-color: white;
+    margin: 2rem 1rem;
+    margin-bottom: 0;
+    padding-top: 1rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+
+}
+
+
+.sports span,
+.electronics span,
+.clothes span{
+    
+    font-family: "Work Sans",serif;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    font-weight: 550 ;
+    padding: 0;
+    
+}
+
+.sports .items-container,
+.electronics .items-container,
+.clothes .items-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    margin-top: 1rem;
 }
 
 .product {
-    height: 250px; /* Fixed height */
-    width: 200px; /* Fixed width */
-    border: 2px solid black;
-    margin: 10px;
+    height: 250px; 
+    width: 200px; 
+    margin-bottom: 3rem;
+    border-bottom:1px solid #cecaca;
     border-radius: 5px;
-    box-shadow: 0 4px 8px black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -296,44 +311,43 @@ h2 {
     text-align: center;
     padding: 10px;
     background-color: white;
+    overflow: hidden;
 }
 
 .product img {
     max-height: 150px; /* Fixed image height */
     max-width: 100%; /* Responsive width */
     object-fit: cover; /* Maintain aspect ratio */
-    transition: transform 0.3s;
+    transition: transform 0.1s;
 }
 
-.product:hover {
-    box-shadow: 0 8px 16px black;
-    transform: scale(1.01);
+.product img:hover {
+    box-shadow: 4px 4px 4px rgb(132, 130, 130);
+    transform: scale(1.02);
     z-index: 2;
 }
 
-.advertisement img {
-    height: 300px; /* Fixed height */
-    width: 100%; /* Make the advertisement responsive */
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.product:hover{
+    border-bottom:2px solid #9d9b9b;
+    cursor: pointer;
 }
 
-.slide{
-    object-fit: cover;
-    width: 100%;
-    height: auto;
+.items-container a{
+    text-decoration: none;
+    color: inherit;
 }
 
 
+
+
+/* Footer Section */
 .footer{
     
     background-image:linear-gradient(0deg, rgb(74, 74, 186) 30%,rgb(212, 106, 212) 100%);
     padding-left: 6rem;
     padding-right: 6rem;
     padding-top: 4rem;
-    margin-top: 25rem;
+    margin-top: 8rem;
     padding-bottom: 4rem;
     
 }
@@ -485,6 +499,7 @@ h2 {
     margin-right: 1rem;
 }
 
+
 .fbb h4{
     font-family: "Kanit", serif;
     margin: 0;
@@ -504,6 +519,11 @@ h2 {
 }
 .fbba a{
     color: inherit;
+    text-decoration: none;
+}
+
+.fbba a:hover{
+    text-decoration: underline;
 }
 .fbba ul{
     padding:0; 
@@ -512,7 +532,7 @@ h2 {
  .fbba li{
     color: #3c3333;
     list-style: none;
-    text-decoration: underline;
+    text-decoration: none;
  }
 
  .fbc h4{
@@ -527,7 +547,7 @@ h2 {
  .fbc hr{
     margin: 0;
     border: 1px solid   #f44a16;
-    width: 50%;
+    width: 20%;
  }
 
  .fbc .banks {
@@ -548,3 +568,64 @@ h2 {
     text-decoration: none;
     color:#f44a16 ;
  }
+ .fc a:hover{
+    text-decoration: underline;
+ }
+
+
+
+ /* Eliminated Part */
+ 
+/* 
+input[type="radio"] {
+    display: none; /* Hide the radio buttons */
+
+
+/* .slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    
+}
+
+.slide{
+    object-fit: cover;
+    width: 50%;
+    height: auto;
+} */
+
+
+/* Show the first slide by default */
+/* #slide1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides {
+    transform: translateX(-200%);
+} */
+
+/* Navigation styles */
+/* .navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+
+/* .navigation label {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    background-color: rgb(247, 4, 4);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+input[type="radio"]:checked + .navigation label {
+    background-color: #717171;
+} */
