@@ -350,9 +350,16 @@ body {
     color: inherit;
 }
 
+        .slide img {
+            display: inline-block;
 
+            width: 100%; /* Make images responsive */
 
+            height: 150px; /* Set a fixed height for the images */
 
+            object-fit: cover; /* Maintain aspect ratio and cover the area */
+
+        }
 /* Footer Section */
 .footer {
 
@@ -621,60 +628,123 @@ body {
     text-decoration: underline;
 }
 
+/* card slider by chatgpt--dhannu */
 
 
-/* Eliminated Part */
 
-/* 
+
+
+
+
+
+
+
+
+
+.card-slider {
+
+    position: relative;
+    width: 100%; /* Adjust width as needed */
+
+    overflow: hidden; /* Hide overflow */
+
+    margin: 20px 0; /* Add some margin */
+
+}
+
+
+.slides {
+
+    display: flex; /* Use flexbox for horizontal layout */
+
+    transition: transform 0.5s ease; /* Smooth transition */
+
+}
+
+
+.slide {
+
+    min-width: 100%; /* Each slide takes full width */
+
+    box-sizing: border-box; /* Include padding and border in width */
+
+}
+
+
 input[type="radio"] {
-    display: none; /* Hide the radio buttons */
 
+    display: none; /* Hide radio buttons */
 
-/* .slides {
-    display: flex;
-    transition: transform 0.5s ease;
-    
 }
 
-.slide{
-    object-fit: cover;
-    width: 50%;
-    height: auto;
-} */
 
+.navigation {
 
-/* Show the first slide by default */
-/* #slide1:checked ~ .slides {
-    transform: translateX(0);
-}
-
-#slide2:checked ~ .slides {
-    transform: translateX(-100%);
-}
-
-#slide3:checked ~ .slides {
-    transform: translateX(-200%);
-} */
-
-/* Navigation styles */
-/* .navigation {
     position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-} */
 
-/* .navigation label {
-    cursor: pointer;
-    height: 10px;
-    width: 10px;
-    background-color: rgb(247, 4, 4);
-    border-radius: 50%;
-    display: inline-block;
-    margin: 0 5px;
-    transition: background-color 0.3s;
+    bottom: 10px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
 }
 
-input[type="radio"]:checked + .navigation label {
-    background-color: #717171;
-} */
+
+.navigation label {
+
+    cursor: pointer;
+
+    height: 10px;
+
+    width: 10px;
+
+    background-color: red; /* Red color for radio buttons */
+
+    border-radius: 50%;
+
+    display: inline-block;
+
+    margin: 0 5px;
+
+    transition: background-color 0.3s;
+
+}
+
+
+/* Slide transitions */
+
+input#slide1:checked ~ .slides {
+
+    transform: translateX(0);
+
+}
+
+
+input#slide2:checked ~ .slides {
+
+    transform: translateX(-100%);
+
+}
+
+
+input#slide3:checked ~ .slides {
+
+    transform: translateX(-200%);
+
+}
+
+
+.slide img {
+
+    width: 100%; /* Make images responsive */
+
+    height: 320px; /* Set a fixed height for the images */
+
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+
+}
+#ladki{
+    height: 350px;
+    padding-top: 0;
+}
