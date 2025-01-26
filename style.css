@@ -302,8 +302,9 @@ body {
 .electronics .items-container,
 .clothes .items-container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 1rem;
 }
 
@@ -358,9 +359,9 @@ body {
     background-image: linear-gradient(0deg, rgb(74, 74, 186) 30%, rgb(212, 106, 212) 100%);
     padding-left: 6rem;
     padding-right: 6rem;
-    padding-top: 4rem;
+    padding-top: 2rem;
     margin-top: 8rem;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
 
 }
 
@@ -394,6 +395,7 @@ body {
 
 .faa {
     display: flex;
+    padding-top: 1rem;
     gap: 1.5rem;
 
 }
@@ -409,6 +411,7 @@ body {
 
 .fab {
     display: flex;
+    padding-top: 1rem;
     gap: 1.5rem;
 }
 
@@ -423,6 +426,7 @@ body {
 
 .fac {
     display: flex;
+    padding-top: 1rem;
     gap: 1.5rem;
 
 }
@@ -451,19 +455,24 @@ body {
 
 }
 
-.fbab pre {
+.fba{
+    margin-bottom: 1rem;
+}
+.fbab span {
     font-family: none;
     font-size: small;
     letter-spacing: 1px;
     color: #3c3333;
     font-weight: bold;
     line-height: 1.5rem;
+    
 }
 
 .fba .logo {
     font-family: "Jersey 10", serif;
     letter-spacing: 3px;
     font-size: 30px;
+    margin-bottom: 0.5rem;
     font-style: italic;
     font-weight: 1000;
 
@@ -477,7 +486,7 @@ body {
 .fbac h4 {
     font-family: "Kanit", serif;
     margin: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     color: white;
     font-size: 22.5px;
     letter-spacing: 1px;
@@ -520,41 +529,53 @@ body {
     margin-right: 1rem;
 }
 
-
+.fbd h4,
 .fbb h4 {
     font-family: "Kanit", serif;
     margin: 0;
+    margin-top: 0.8rem;
     margin-bottom: 2px;
     color: white;
     font-size: 22.5px;
     letter-spacing: 1px;
 }
 
+.fbd hr
+{
+    margin: 0;
+    border: 1px solid #f44a16;
+    width: 85%;
+}
 .fbb hr {
     margin: 0;
     border: 1px solid #f44a16;
     width: 50%;
 }
 
+.fbda,
 .fbba {
     display: flex;
     gap: 2rem;
 }
 
+.fbda a,
 .fbba a {
     color: inherit;
     text-decoration: none;
 }
 
+.fbda a:hover,
 .fbba a:hover {
     text-decoration: underline;
 }
 
+.fbda ul,
 .fbba ul {
     padding: 0;
     line-height: 1.8rem;
 }
 
+.fbda li,
 .fbba li {
     color: #3c3333;
     list-style: none;
@@ -571,6 +592,7 @@ body {
 }
 
 .fbc hr {
+    margin-top: 0.8rem;
     margin: 0;
     border: 1px solid #f44a16;
     width: 20%;
