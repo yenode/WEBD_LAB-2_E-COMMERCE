@@ -14,10 +14,13 @@ body {
 /* Navbar */
 
 .navbar {
-    overflow: auto;/*for scroll bar*/
-    white-space: wrap; /*for scroll bar */
+    /* overflow: auto; */
+    /*for scroll bar*/
+    /* white-space: wrap; */
+    /*for scroll bar */
     display: flex;
-    flex-wrap: nowrap;/*wrap when no scroll bar*/
+    flex-wrap: wrap;
+    /*wrap when no scroll bar*/
     position: sticky;
     top: 0;
     right: 0;
@@ -55,19 +58,28 @@ body {
 
 }
 
+/* @media screen and (max-width: 750px) {
+    div.searchbar {
+      display: none;
+    }
+  } */
+
 .searchbar {
+
     display: flex;
     align-items: center;
     border: 2px solid #ccc;
     border-radius: 10px;
     overflow: hidden;
     background-color: white;
-    width: 40rem;
+    width: 30rem;
     transition: all 0.3s ease;
-    min-width: 25rem;
+    min-width: 1rem;
 
 
 }
+
+
 
 .searchbar:hover {
     border-color: #007BFF;
@@ -82,6 +94,7 @@ body {
     width: 20rem;
     flex-grow: 1;
     color: #333;
+    min-width: 0rem;
 }
 
 .searchbar input::placeholder {
@@ -91,6 +104,8 @@ body {
 
 .searchbar button {
     background-color: #ffffff;
+    position: relative;
+    min-width: 2rem;
     border: none;
     color: white;
     padding-top: 0.3rem;
@@ -350,16 +365,20 @@ body {
     color: inherit;
 }
 
-        .slide img {
-            display: inline-block;
+.slide img {
+    display: inline-block;
 
-            width: 100%; /* Make images responsive */
+    width: 100%;
+    /* Make images responsive */
 
-            height: 150px; /* Set a fixed height for the images */
+    height: 150px;
+    /* Set a fixed height for the images */
 
-            object-fit: cover; /* Maintain aspect ratio and cover the area */
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the area */
 
-        }
+}
+
 /* Footer Section */
 .footer {
 
@@ -462,9 +481,10 @@ body {
 
 }
 
-.fba{
+.fba {
     margin-bottom: 1rem;
 }
+
 .fbab span {
     font-family: none;
     font-size: small;
@@ -472,7 +492,7 @@ body {
     color: #3c3333;
     font-weight: bold;
     line-height: 1.5rem;
-    
+
 }
 
 .fba .logo {
@@ -547,12 +567,12 @@ body {
     letter-spacing: 1px;
 }
 
-.fbd hr
-{
+.fbd hr {
     margin: 0;
     border: 1px solid #f44a16;
     width: 85%;
 }
+
 .fbb hr {
     margin: 0;
     border: 1px solid #f44a16;
@@ -644,37 +664,43 @@ body {
 .card-slider {
 
     position: relative;
-    width: 100%; /* Adjust width as needed */
+    width: 80%;
 
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden;
 
-    margin: 20px 0; /* Add some margin */
+    margin: 20px 0;
+    align-self: center;
+
 
 }
 
 
 .slides {
 
-    display: flex; /* Use flexbox for horizontal layout */
-
-    transition: transform 0.5s ease; /* Smooth transition */
-
+    display: flex;
+    transition: transform 0.5s ease;
 }
 
 
 .slide {
-
-    min-width: 100%; /* Each slide takes full width */
-
-    box-sizing: border-box; /* Include padding and border in width */
+    min-width: 100%;
+    object-fit: cover;
 
 }
 
+.slide img {
+    /* border: 2px solid black; */
+    object-fit: cover;
+    border-radius: 15px;
+    overflow: hidden;
+    min-width: 100%;  
+    /* min-height: 100%; */
+
+}
 
 input[type="radio"] {
 
-    display: none; /* Hide radio buttons */
-
+    display: none;
 }
 
 
@@ -699,7 +725,8 @@ input[type="radio"] {
 
     width: 10px;
 
-    background-color: red; /* Red color for radio buttons */
+    background-color: red;
+    /* Red color for radio buttons */
 
     border-radius: 50%;
 
@@ -714,21 +741,21 @@ input[type="radio"] {
 
 /* Slide transitions */
 
-input#slide1:checked ~ .slides {
+input#slide1:checked~.slides {
 
     transform: translateX(0);
 
 }
 
 
-input#slide2:checked ~ .slides {
+input#slide2:checked~.slides {
 
     transform: translateX(-100%);
 
 }
 
 
-input#slide3:checked ~ .slides {
+input#slide3:checked~.slides {
 
     transform: translateX(-200%);
 
@@ -737,14 +764,14 @@ input#slide3:checked ~ .slides {
 
 .slide img {
 
-    width: 100%; /* Make images responsive */
+    width: 80%;
+    /* Make images responsive */
 
-    height: 320px; /* Set a fixed height for the images */
+    height: 340px;
+    /* Set a fixed height for the images */
 
-    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the area */
 
 }
-#ladki{
-    height: 350px;
-    padding-top: 0;
-}
+
