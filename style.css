@@ -14,10 +14,13 @@ body {
 /* Navbar */
 
 .navbar {
-    overflow: auto;/*for scroll bar*/
-    white-space: wrap; /*for scroll bar */
+    /* overflow: auto; */
+    /*for scroll bar*/
+    /* white-space: wrap; */
+    /*for scroll bar */
     display: flex;
-    flex-wrap: nowrap;/*wrap when no scroll bar*/
+    flex-wrap: wrap;
+    /*wrap when no scroll bar*/
     position: sticky;
     top: 0;
     right: 0;
@@ -55,19 +58,28 @@ body {
 
 }
 
+/* @media screen and (max-width: 750px) {
+    div.searchbar {
+      display: none;
+    }
+  } */
+
 .searchbar {
+
     display: flex;
     align-items: center;
     border: 2px solid #ccc;
     border-radius: 10px;
     overflow: hidden;
     background-color: white;
-    width: 40rem;
+    width: 30rem;
     transition: all 0.3s ease;
-    min-width: 25rem;
+    min-width: 1rem;
 
 
 }
+
+
 
 .searchbar:hover {
     border-color: #007BFF;
@@ -82,6 +94,7 @@ body {
     width: 20rem;
     flex-grow: 1;
     color: #333;
+    min-width: 0rem;
 }
 
 .searchbar input::placeholder {
@@ -91,6 +104,8 @@ body {
 
 .searchbar button {
     background-color: #ffffff;
+    position: relative;
+    min-width: 2rem;
     border: none;
     color: white;
     padding-top: 0.3rem;
@@ -283,21 +298,20 @@ body {
     padding-top: 1rem;
     padding-left: 1.2rem;
     padding-right: 1.2rem;
-
 }
 
 
 .sports span,
 .electronics span,
 .clothes span,
-.decoration span {
+.decoration span,
 
+.clothes span {
     font-family: "Work Sans", serif;
     color: rgb(0, 0, 0);
     font-size: 1.5rem;
     font-weight: 550;
     padding: 0;
-
 }
 
 .sports .items-container,
@@ -353,16 +367,13 @@ body {
     color: inherit;
 }
 
-        .slide img {
-            display: inline-block;
+.slide img {
+    display: inline-block;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
 
-            width: 100%; /* Make images responsive */
-
-            height: 150px; /* Set a fixed height for the images */
-
-            object-fit: cover; /* Maintain aspect ratio and cover the area */
-
-        }
 /* Footer Section */
 .footer {
 
@@ -372,15 +383,12 @@ body {
     padding-top: 2rem;
     margin-top: 8rem;
     padding-bottom: 2rem;
-
 }
 
 .fa {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-
 }
 
 .fa i {
@@ -395,7 +403,6 @@ body {
     letter-spacing: 1px;
     color: #3c3333;
     font-weight: bold;
-
 }
 
 .fa a {
@@ -407,7 +414,6 @@ body {
     display: flex;
     padding-top: 1rem;
     gap: 1.5rem;
-
 }
 
 .faab h4 {
@@ -438,7 +444,6 @@ body {
     display: flex;
     padding-top: 1rem;
     gap: 1.5rem;
-
 }
 
 .facb h4 {
@@ -452,22 +457,20 @@ body {
 
 .footer hr {
     margin: 4rem auto;
-
     border: 1px solid #d1c3c3;
     width: 100%;
-
 }
 
 .fb {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
 }
 
-.fba{
+.fba {
     margin-bottom: 1rem;
 }
+
 .fbab span {
     font-family: none;
     font-size: small;
@@ -475,9 +478,7 @@ body {
     color: #3c3333;
     font-weight: bold;
     line-height: 1.5rem;
-    
 }
-
 .fba .logo {
     font-family: "Jersey 10", serif;
     letter-spacing: 3px;
@@ -485,14 +486,10 @@ body {
     margin-bottom: 0.5rem;
     font-style: italic;
     font-weight: 1000;
-
-
 }
-
 .fba .logo a {
     color: rgb(255, 255, 255);
 }
-
 .fbac h4 {
     font-family: "Kanit", serif;
     margin: 0;
@@ -501,44 +498,36 @@ body {
     font-size: 22.5px;
     letter-spacing: 1px;
 }
-
 .fbac .x {
     background-color: rgb(91, 139, 233);
     border-radius: 40px;
     border: none;
     font-size: 2rem;
 }
-
 .fbac .x i {
     color: #ffffff;
 }
-
 .fbac .insta {
     background-color: rgb(255, 255, 255);
     border-radius: 40px;
     border: none;
     font-size: 2rem;
 }
-
 .fbac .insta i {
     color: #e34eda;
 }
-
 .fbac .face {
     background-color: rgb(9, 139, 233);
     border-radius: 40px;
     border: none;
     font-size: 2rem;
 }
-
 .fbac .face i {
     color: #ffffff;
 }
-
 .fbac button {
     margin-right: 1rem;
 }
-
 .fbd h4,
 .fbb h4 {
     font-family: "Kanit", serif;
@@ -549,9 +538,7 @@ body {
     font-size: 22.5px;
     letter-spacing: 1px;
 }
-
-.fbd hr
-{
+.fbd hr {
     margin: 0;
     border: 1px solid #f44a16;
     width: 85%;
@@ -561,37 +548,31 @@ body {
     border: 1px solid #f44a16;
     width: 50%;
 }
-
 .fbda,
 .fbba {
     display: flex;
     gap: 2rem;
 }
-
 .fbda a,
 .fbba a {
     color: inherit;
     text-decoration: none;
 }
-
 .fbda a:hover,
 .fbba a:hover {
     text-decoration: underline;
 }
-
 .fbda ul,
 .fbba ul {
     padding: 0;
     line-height: 1.8rem;
 }
-
 .fbda li,
 .fbba li {
     color: #3c3333;
     list-style: none;
     text-decoration: none;
 }
-
 .fbc h4 {
     font-family: "Kanit", serif;
     margin: 0;
@@ -600,20 +581,17 @@ body {
     font-size: 22.5px;
     letter-spacing: 1px;
 }
-
 .fbc hr {
     margin-top: 0.8rem;
     margin: 0;
     border: 1px solid #f44a16;
     width: 20%;
 }
-
 .fbc .banks {
     margin-top: 1rem;
     display: flex;
 
 }
-
 .fc {
     background-color: transparent;
     padding: 0.5rem;
@@ -621,63 +599,53 @@ body {
     font-size: 1.2rem;
     justify-content: center;
 }
-
 .fc a {
     text-decoration: none;
     color: #f44a16;
 }
-
 .fc a:hover {
     text-decoration: underline;
 }
-
-/* card slider by chatgpt--dhannu */
-
-
-
-
-
-
-
-
-
-
-
-
 .card-slider {
 
     position: relative;
-    width: 100%; /* Adjust width as needed */
+    width: 80%;
 
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden;
 
-    margin: 20px 0; /* Add some margin */
+    margin: 20px 0;
+    align-self: center;
+
 
 }
 
 
 .slides {
 
-    display: flex; /* Use flexbox for horizontal layout */
-
-    transition: transform 0.5s ease; /* Smooth transition */
-
+    display: flex;
+    transition: transform 0.5s ease;
 }
 
 
 .slide {
-
-    min-width: 100%; /* Each slide takes full width */
-
-    box-sizing: border-box; /* Include padding and border in width */
+    min-width: 100%;
+    object-fit: cover;
 
 }
 
+.slide img {
+    /* border: 2px solid black; */
+    object-fit: cover;
+    border-radius: 15px;
+    overflow: hidden;
+    min-width: 100%;  
+    /* min-height: 100%; */
+
+}
 
 input[type="radio"] {
 
-    display: none; /* Hide radio buttons */
-
+    display: none;
 }
 
 
@@ -702,7 +670,8 @@ input[type="radio"] {
 
     width: 10px;
 
-    background-color: red; /* Red color for radio buttons */
+    background-color: red;
+    /* Red color for radio buttons */
 
     border-radius: 50%;
                      
@@ -717,21 +686,21 @@ input[type="radio"] {
 
 /* Slide transitions */
 
-input#slide1:checked ~ .slides {
+input#slide1:checked~.slides {
 
     transform: translateX(0);
 
 }
 
 
-input#slide2:checked ~ .slides {
+input#slide2:checked~.slides {
 
     transform: translateX(-100%);
 
 }
 
 
-input#slide3:checked ~ .slides {
+input#slide3:checked~.slides {
 
     transform: translateX(-200%);
 
@@ -739,14 +708,11 @@ input#slide3:checked ~ .slides {
 
 
 .slide img {
-
-    width: 100%; /* Make images responsive */
-
-    height: 320px; /* Set a fixed height for the images */
-
-    object-fit: cover; /* Maintain aspect ratio and cover the area */
-
+    width: 80%;
+    height: 340px;
+    object-fit: cover;
 }
+
 
 #ladki{
     height: 350px;
