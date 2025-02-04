@@ -289,7 +289,8 @@ body {
 
 .sports,
 .electronics,
-.clothes {
+.clothes,
+.decoration {
     display: block;
     background-color: white;
     margin: 2rem 1rem;
@@ -302,6 +303,9 @@ body {
 
 .sports span,
 .electronics span,
+.clothes span,
+.decoration span,
+
 .clothes span {
     font-family: "Work Sans", serif;
     color: rgb(0, 0, 0);
@@ -312,7 +316,8 @@ body {
 
 .sports .items-container,
 .electronics .items-container,
-.clothes .items-container {
+.clothes .items-container,
+.decoration .items-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -669,7 +674,7 @@ input[type="radio"] {
     /* Red color for radio buttons */
 
     border-radius: 50%;
-
+                     
     display: inline-block;
 
     margin: 0 5px;
@@ -708,3 +713,8 @@ input#slide3:checked~.slides {
     object-fit: cover;
 }
 
+
+#ladki{
+    height: 350px;
+    padding-top: 0;
+}
